@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Kablammo&family=Moirai+One&family=Tilt+Prism&display=swap" rel="stylesheet"><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOO Manager</title>
+    <link rel="stylesheet" href="{{ url_for("static",filename ='css/style.css') }}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <ul class="header_inner">
+                <li class="header_logo">
+                    <a href="/">ZOO Manager</a>
+                </li>
+
+                <ul class="nav">
+                    <li class="nav_item">
+                        <a href="">home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="">about</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="">new arrivals</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="">add animal</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main_content add_post">
+            <h1>update form</h1>
+            <form action="" method="post" class="add_post_form">
+                {{ form.hidden_tag() }}
+                <label for="file" class="add_post_photo">
+                    <h1>Enter photo:</h1>
+                    <input type="file" name="file" id="">
+                </label>
+                <label for="kind" class="add_post_item">
+                    <h1>Enter kind:</h1>
+                    {{ form.kind(value_=animal.kind) }}
+                </label>
+                <label for="breed" class="add_post_item">
+                    <h1>Enter breed:</h1>
+                    {{ form.breed(value_=animal.breed) }}
+                </label>
+                <label for="age" class="add_post_item">
+                    <h1>Enter age:</h1>
+                    {{ form.age(value_=animal.age) }}
+                </label>
+                <label for="gender" class="add_post_item">
+                    <h1>Enter gender:</h1>
+                    {{ form.gender(value_=animal.gender) }}
+                </label>
+                <label for="submit" class="add_post_btn">
+                    {{ form.create }}
+                </label>
+            </form>
+        </div>
+
+        <img src="img/3.jpg" alt="" class="main_background">
+    </main>
+</body>
+</html>

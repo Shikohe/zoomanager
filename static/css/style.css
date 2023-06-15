@@ -1,0 +1,173 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+input{
+    outline: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(244, 242, 238);
+    box-shadow: 5px 5px 20px #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav_item{
+    padding: 10px 20px;
+}
+
+.header_logo a{
+    font-family: 'Kablammo', cursive;
+    font-size: 50px;
+    color: green;
+}
+.nav_item a{
+    font-family: 'Moirai One', cursive;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+}
+.main{
+    /* background: url(../img/3.jpg); */
+    position: relative;
+    padding-top: 100px;
+
+}
+.main_background{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+}
+.main_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+    background-color: white;
+    padding: 50px;
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.main_post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #b0b0b0;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+.main_post img{
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+.add_post{
+    padding: 350px 0 150px;
+    width: 100%;
+    
+}
+
+.add_post_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+}
+.add_post_item h1{
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+  
+}
+.add_post_item {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.add_post_item input{
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    height: 30px;
+    padding-left: 6px;
+}
+.add_post_btn input{
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 0;
+    background-color: blanchedalmond;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+}
+.add_post_btn input:hover{
+    background-color: rgb(113, 92, 61);
+}
+.add_post_photo{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.add_post_photo h1{
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+}
+.add_post_photo input{
+
+}
