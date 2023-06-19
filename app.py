@@ -18,7 +18,7 @@ class Animal(db.Model):
     age = db.Column(db.Integer)
     gender = db.Column(db.String(100))
 
-    # to_dict მეთოდს ვქმნით Student მოდელის ლექსიკონად გადაქასთვის ფუნქციონალისთვის
+   
     def to_dict(self):
         return {
             'id': self.id,
